@@ -1,0 +1,23 @@
+{
+  "name": "WebApps2020Project",
+  "version": "1.0.0",
+  "description": "Repository for Web Applications Development's Final project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MiguelGT98/WebApps2020Project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MiguelGT98/WebApps2020Project/issues"
+  },
+  "homepage": "https://github.com/MiguelGT98/WebApps2020Project#readme",
+  "dependencies": {
+    "bootstrap": "^4.4.1"
+  }
+}
