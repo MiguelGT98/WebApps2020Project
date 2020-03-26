@@ -1,0 +1,31 @@
+.ribbon {
+  position: absolute;
+  width: 150px;
+  height: 25px;
+  top: 30px;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: #fff;
+}
+.ribbon.left {
+  left: -30px;
+  transform: rotate(-45deg);
+}
+.ribbon.right {
+  right: -30px;
+  transform: rotate(45deg);
+}
+.ribbon.red {
+  background-color: #e43f3f;
+}
+.ribbon.green {
+  background-color: #65c536;
+}
+
+/*# sourceMappingURL=main.css.map */
