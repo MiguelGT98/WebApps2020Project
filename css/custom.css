@@ -9881,7 +9881,7 @@ h3 {
   }
 }
 body {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 /*# sourceMappingURL=custom.css.map */
