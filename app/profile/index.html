@@ -1,60 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../../css/custom.css" />
     <link rel="stylesheet" href="../../css/app/profile.css" />
     <title>🐕 Fluffy Friends | Mi perfil</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
-      <a class="navbar-brand" href="../index.html">
+        <a class="navbar-brand" href="../index.html">
         🐕 Fluffy Friends
       </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item ">
-            <a class="nav-link" href="../index.html">Home </a>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="../friends/index.html">Mis friends</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../new/index.html">Nuevo friend</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="./index.html"
-              >Mi perfil<span class="sr-only">(current)</span></a
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="../index.html">Home </a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="../friends/index.html">Mis friends</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../new/index.html">Nuevo friend</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="./index.html">Mi perfil<span class="sr-only">(current)</span></a
             >
           </li>
         </ul>
       </div>
     </nav>
     <div class="my-profile-wrapper">
-      
+      <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-4 pb-5">
+                <div class="author-card pb-3">
+                    <div class="author-card-cover" style="background-image: url(https://demo.createx.studio/createx-html/img/widgets/author/cover.jpg);"></div>
+        <div class="author-card-profile">
+            <div class="author-card-avatar"><img src="../../images/mike.jfif" alt="Miguel Gallardo">
+            </div>
+            <div class="author-card-details">
+                <h5 class="author-card-name text-lg">Miguel Gallardo</h5><span class="author-card-position">Se unió el 28 de marzo de 2020</span>
+            </div>
+        </div>
+        </div>
+        <div class="wizard">
+            <nav class="list-group list-group-flush">
+                <a class="list-group-item active" href="#"><i class="fe-icon-user text-muted"></i>Ajustes de perfil</a>
+                    <a class="list-group-item" href="#"><i class="fe-icon-map-pin text-muted"></i>Mis mensajes</a>
+    </nav>
     </div>
-  </body>
-  <script
-    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"
-  ></script>
-  <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    </div>
+    <!-- Profile Settings-->
+    <div class="col-lg-8 pb-5">
+        <form class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="account-fn">Nombre(s)</label>
+                    <input class="form-control" type="text" id="account-fn" value="Miguel" required="">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="account-ln">Apellidos</label>
+                    <input class="form-control" type="text" id="account-ln" value="Gallardo" required="">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="account-email">Correo electrónico</label>
+                    <input class="form-control" type="email" id="account-email" value="miguel.gallardo@ejemplo.com" disabled="">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="account-phone">Número telefónico</label>
+                    <input class="form-control" type="text" id="account-phone" value="55 5555 5555" required="">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="account-pass">Nueva contraseña</label>
+                    <input class="form-control" type="password" id="account-pass">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="account-confirm-pass">Confirmar contraseña</label>
+                    <input class="form-control" type="password" id="account-confirm-pass">
+                </div>
+            </div>
+            <div class="col-12">
+                <hr class="mt-2 mb-3">
+                <div class="d-flex flex-wrap justify-content-between align-items-center">
+                    <button class="btn btn-style-1 btn-primary" type="button" data-toast="" data-toast-position="topRight" data-toast-type="success" data-toast-icon="fe-icon-check-circle" data-toast-title="Completado" data-toast-message="Your profile updated successfuly.">Actualizar perfil</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    </div>
+    </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
 </html>
