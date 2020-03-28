@@ -1,0 +1,107 @@
+.friend-wrapper {
+  padding: 30px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.friend-wrapper .card {
+  min-width: 335px;
+  border: none;
+}
+.friend-wrapper .card .card-img-top {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+  margin: 0 auto;
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  margin-bottom: -20px;
+  z-index: 1;
+}
+.friend-wrapper .card .card-body {
+  background: #fff;
+  border: 0.5px solid #e9ecef;
+  box-sizing: border-box;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.18);
+  border-radius: 10px;
+  padding: 40px 0px 0px 0px;
+}
+.friend-wrapper .card .card-body .card-text,
+.friend-wrapper .card .card-body .card-title {
+  padding: 0px 30px;
+}
+.friend-wrapper .card .card-body .card-buttons {
+  border-top: 2px solid #e9ecef;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 40px;
+}
+.friend-wrapper .card .card-body .card-buttons button {
+  border-radius: 100px;
+  width: 60px;
+  height: 60px;
+  border: 0;
+}
+.friend-wrapper .card .card-body .card-buttons button svg {
+  width: 28px;
+  height: 28px;
+}
+.friend-wrapper .card .card-body .card-buttons button.dislike {
+  background-color: #e43f3f;
+}
+.friend-wrapper .card .card-body .card-buttons button.dislike svg path {
+  fill: #f8f9fa;
+}
+.friend-wrapper .card .card-body .card-buttons button.like {
+  height: 80px;
+  width: 80px;
+  background-color: #65c536;
+}
+.friend-wrapper .card .card-body .card-buttons button.like svg path {
+  fill: #f8f9fa;
+}
+.friend-wrapper .card .card-body .card-buttons button.info {
+  background-color: #adb5bd;
+}
+.friend-wrapper .card .card-body .card-buttons button.info svg path {
+  fill: #f8f9fa;
+}
+.friend-wrapper form {
+  flex-grow: 1;
+  background: #fff;
+  border: 0.5px solid #e9ecef;
+  box-sizing: border-box;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.18);
+  border-radius: 10px;
+  padding: 40px;
+  margin-left: 30px;
+  min-width: 335px;
+  text-align: justify;
+}
+.friend-wrapper form #preview-files img {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  object-fit: cover;
+  margin-right: 10px;
+  border: 2px solid #65c536;
+}
+
+@media (min-width: 992px) {
+  .friend-wrapper {
+    padding: 2rem 6rem;
+  }
+}
+@media (max-width: 767px) {
+  .friend-wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .friend-wrapper form {
+    margin-top: 50px;
+    margin-left: 0;
+  }
+}
+
+/*# sourceMappingURL=friend.css.map */

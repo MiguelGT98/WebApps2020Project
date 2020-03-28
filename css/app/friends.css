@@ -1,0 +1,32 @@
+.friends-wrapper {
+  padding: 30px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.friends-wrapper table {
+  width: 100%;
+}
+.friends-wrapper table img {
+  object-fit: cover;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  margin-right: 10px;
+}
+.friends-wrapper table td {
+  vertical-align: middle;
+}
+
+@media (min-width: 992px) {
+  .friends-wrapper {
+    padding: 2rem 6rem;
+  }
+}
+@media (max-width: 767px) {
+  .friends-wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/*# sourceMappingURL=friends.css.map */
