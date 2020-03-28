@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../scss/integrantes.scss","../scss/variables.scss"],"names":[],"mappings":"AAGE;EACE;;AAGF;EACI;;AAGJ;EACE;EACA;EACA;;AAEA;EACE;EACA;EACA;EACA;EACA,OCNK;;ADSP;EACE;EACA;EACA,OCdK;;ADiBP;EACE;EACA","file":"integrantes.css"}
+{"version":3,"sourceRoot":"","sources":["../scss/integrantes.scss","../scss/variables.scss"],"names":[],"mappings":"AAEA;EACE;;AAEA;EACE;;AAGF;EACI;;AAGJ;EACE;EACA;EACA;;AAEA;EACE;EACA;EACA;EACA;EACA,OCRK;;ADWP;EACE;EACA;EACA,OChBK;;ADmBP;EACE;EACA","file":"integrantes.css"}

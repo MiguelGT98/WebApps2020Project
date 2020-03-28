@@ -2,6 +2,7 @@
 @import "../mixins";
 
 .friends-wrapper {
+  min-height: 100vh;
   padding: 30px 20px;
   display: flex;
   justify-content: space-between;

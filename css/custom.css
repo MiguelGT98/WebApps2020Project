@@ -9880,6 +9880,12 @@ h3 {
     padding: 0.5rem 6rem;
   }
 }
+#sticky-footer {
+  position: sticky;
+  bottom: 0;
+  z-index: -1;
+}
+
 body {
   overflow-x: hidden;
 }

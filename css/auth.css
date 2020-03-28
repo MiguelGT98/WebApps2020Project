@@ -1,3 +1,6 @@
-
+.container {
+  min-height: 100vh;
+  background-color: transparent !important;
+}
 
 /*# sourceMappingURL=auth.css.map */

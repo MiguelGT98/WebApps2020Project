@@ -2,6 +2,13 @@
   min-height: 600px;
   border-radius: 0;
   background-color: #207379 !important;
+  margin-bottom: calc(100vh - 672px);
+}
+.jumbotron .lead {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
 }
 .jumbotron img {
   object-fit: cover;
@@ -12,6 +19,28 @@
   right: 48px;
   box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.18);
   border-radius: 10px;
+}
+
+@media (max-width: 767px) {
+  .jumbotron h1 {
+    font-size: 4rem;
+  }
+  .jumbotron .lead {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+  }
+  .jumbotron img {
+    object-fit: cover;
+    height: 250px;
+    max-width: 250px;
+    position: absolute;
+    bottom: 48px;
+    right: 48px;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.18);
+    border-radius: 10px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

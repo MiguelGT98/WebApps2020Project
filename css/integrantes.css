@@ -1,3 +1,6 @@
+.integrantes {
+  min-height: 100vh;
+}
 .integrantes h1 {
   font-weight: 700;
 }
