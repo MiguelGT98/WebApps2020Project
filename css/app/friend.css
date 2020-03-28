@@ -2,6 +2,7 @@
   padding: 30px 20px;
   display: flex;
   justify-content: space-between;
+  min-height: 100vh;
 }
 .friend-wrapper .card {
   min-width: 335px;

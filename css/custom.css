@@ -9883,7 +9883,7 @@ h3 {
 #sticky-footer {
   position: sticky;
   bottom: 0;
-  z-index: -1;
+  z-index: 99999999;
 }
 
 body {

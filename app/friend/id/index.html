@@ -1,180 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../../css/custom.css" />
-    <link rel="stylesheet" href="../../../css/app/friend.css" />
-    <title>🐕 Fluffy Friends | Benito</title>
-  </head>
-  <body>
-    <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
-      <a class="navbar-brand" href="../index.html">
-        🐕 Fluffy Friends
-      </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item ">
-            <a class="nav-link" href="../../index.html">Home </a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="../../friends/index.html"
-              >Mis friends<span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../../new/index.html">Nuevo friend</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../../profile/index.html">Mi perfil</a>
-          </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">ES/EN</a>
-          </li></ul>
-      </div>
-    </nav>
-    <div class="friend-wrapper">
-      <div class="card">
-        <img
-          class="card-img-top"
-          src="https://www.guidingeyes.org/wp-content/uploads/2020/01/1-1.jpg"
-          alt="Card image cap"
-        />
-        <div class="card-body">
-          <h5 class="card-title">Benito</h5>
-          <p class="card-text">
-            <span class="badge badge-pill text-info border border-info"
-              >Amable</span
-            >
-            <span class="badge badge-pill text-dark border border-dark"
-              >Juguetón</span
-            >
-          </p>
-          <div class="card-buttons">
-            <button class="dislike">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                width="24"
-                height="24"
-              >
-                <path
-                  class="heroicon-ui"
-                  d="M6.38 14H4a2 2 0 0 1-2-2V4c0-1.1.9-2 2-2h11.5c1.2 0 2.3.72 2.74 1.79l3.5 7 .03.06A3 3 0 0 1 19 15h-5v5a2 2 0 0 1-2 2h-1.62l-4-8zM8 12.76L11.62 20H12v-7h7c.13 0 .25-.02.38-.08a1 1 0 0 0 .55-1.28l-3.5-7.02A1 1 0 0 0 15.5 4H8v8.76zM6 12V4H4v8h2z"
-                />
-              </svg>
-            </button>
-            <button class="like">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                width="24"
-                height="24"
-              >
-                <path
-                  class="heroicon-ui"
-                  d="M17.62 10H20a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H8.5c-1.2 0-2.3-.72-2.74-1.79l-3.5-7-.03-.06A3 3 0 0 1 5 9h5V4c0-1.1.9-2 2-2h1.62l4 8zM16 11.24L12.38 4H12v7H5a1 1 0 0 0-.93 1.36l3.5 7.02a1 1 0 0 0 .93.62H16v-8.76zm2 .76v8h2v-8h-2z"
-                />
-              </svg>
-            </button>
-            <button class="info">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                width="24"
-                height="24"
-              >
-                <path
-                  class="heroicon-ui"
-                  d="M12 22a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm0-9a1 1 0 0 1 1 1v4a1 1 0 0 1-2 0v-4a1 1 0 0 1 1-1zm0-4a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
-                />
-              </svg>
-            </button>
-          </div>
-        </div>
-      </div>
-      <form>
-        <div class="form-group">
-          <label for="name">Nombre</label>
-          <input
-            type="text"
-            class="form-control"
-            id="name"
-            name="name"
-            aria-describedby="nameHelp"
-            placeholder="Ingresa nombre"
-          />
-        </div>
-        <div class="form-group">
-          <label for="name">Características</label>
-          <select
-            class="form-control"
-            id="characteristics"
-            name="characteristics"
-            aria-describedby="characteristicsHelp"
-            ><option>Docil</option
-            ><option>Juguetón</option
-            ><option>Amable</option></select
-          >
-        </div>
-        <div class="form-group">
-          <label for="images">Images</label>
-          <input
-            multiple="true"
-            type="file"
-            class="form-control-file"
-            id="images"
-            name="images"
-          />
-        </div>
-        <div class="form-group">
-          <div id="preview-files"></div>
-        </div>
-        <div class="form-group">
-          <label for="description">Descripción</label>
-          <textarea
-            class="form-control"
-            id="description"
-            name="description"
-            rows="4"
-          ></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary mb-2">
-          Actualizar datos
-        </button>
-        <button type="submit" class="btn btn-link mb-2">
-          Cancelar
-        </button>
-      </form>
-    </div>
-  </body>
-  <footer id="sticky-footer" class="page-footer font-small blue p-4 bg-dark">
-    <div class="footer-copyright text-center text-white">
-      © 2020 Copyright: Fluffy Friends.
-    </div>
-  </footer>
-  <script
-    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../../../css/custom.css" />
+  <link rel="stylesheet" href="../../../css/app/friend.css" />
+  <title>🐕 Fluffy Friends | Benito</title>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
     integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"
-  ></script>
-  <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    crossorigin="anonymous"></script>
+  <script src="../../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   <script>
     function readURL(e) {
       const input = e.target;
@@ -188,7 +27,7 @@
         files.forEach(element => {
           const img = document.createElement("IMG");
           img.src = URL.createObjectURL(element);
-          img.onload = function() {
+          img.onload = function () {
             URL.revokeObjectURL(img.src); // free memory
           };
           container.appendChild(img);
@@ -200,4 +39,106 @@
       document.getElementById("images").onchange = readURL;
     };
   </script>
+</head>
+
+<body>
+  <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+    <a class="navbar-brand" href="../../index.html">
+      🐕 Fluffy Friends
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item ">
+          <a class="nav-link" href="../../index.html">Home </a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="../../friends/index.html">Mis friends<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../../new/index.html">Nuevo friend</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../../profile/index.html">Mi perfil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">ES/EN</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="friend-wrapper">
+    <div class="card">
+      <img class="card-img-top" src="https://www.guidingeyes.org/wp-content/uploads/2020/01/1-1.jpg"
+        alt="Card image cap" />
+      <div class="card-body">
+        <h5 class="card-title">Benito</h5>
+        <p class="card-text">
+          <span class="badge badge-pill text-info border border-info">Amable</span>
+          <span class="badge badge-pill text-dark border border-dark">Juguetón</span>
+        </p>
+        <div class="card-buttons">
+          <button class="dislike">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+              <path class="heroicon-ui"
+                d="M6.38 14H4a2 2 0 0 1-2-2V4c0-1.1.9-2 2-2h11.5c1.2 0 2.3.72 2.74 1.79l3.5 7 .03.06A3 3 0 0 1 19 15h-5v5a2 2 0 0 1-2 2h-1.62l-4-8zM8 12.76L11.62 20H12v-7h7c.13 0 .25-.02.38-.08a1 1 0 0 0 .55-1.28l-3.5-7.02A1 1 0 0 0 15.5 4H8v8.76zM6 12V4H4v8h2z" />
+            </svg>
+          </button>
+          <button class="like">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+              <path class="heroicon-ui"
+                d="M17.62 10H20a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H8.5c-1.2 0-2.3-.72-2.74-1.79l-3.5-7-.03-.06A3 3 0 0 1 5 9h5V4c0-1.1.9-2 2-2h1.62l4 8zM16 11.24L12.38 4H12v7H5a1 1 0 0 0-.93 1.36l3.5 7.02a1 1 0 0 0 .93.62H16v-8.76zm2 .76v8h2v-8h-2z" />
+            </svg>
+          </button>
+          <button class="info">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+              <path class="heroicon-ui"
+                d="M12 22a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm0-9a1 1 0 0 1 1 1v4a1 1 0 0 1-2 0v-4a1 1 0 0 1 1-1zm0-4a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <form>
+      <div class="form-group">
+        <label for="name">Nombre</label>
+        <input type="text" class="form-control" id="name" name="name" placeholder="Ingresa nombre" />
+      </div>
+      <div class="form-group">
+        <label for="name">Características</label>
+        <select class="form-control" id="characteristics" name="characteristics">
+          <option>Docil</option>
+          <option>Juguetón</option>
+          <option>Amable</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="images">Images</label>
+        <input type="file" class="form-control-file" id="images" name="images" />
+      </div>
+      <div class="form-group">
+        <div id="preview-files"></div>
+      </div>
+      <div class="form-group">
+        <label for="description">Descripción</label>
+        <textarea class="form-control" id="description" name="description" rows="4"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary mb-2">
+        Actualizar datos
+      </button>
+      <button type="submit" class="btn btn-link mb-2">
+        Cancelar
+      </button>
+    </form>
+  </div>
+  <footer id="sticky-footer" class="page-footer font-small blue p-4 bg-dark">
+    <div class="footer-copyright text-center text-white">
+      © 2020 Copyright: Fluffy Friends.
+    </div>
+  </footer>
+</body>
+
 </html>
