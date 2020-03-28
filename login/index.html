@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/custom.css" />
+    <link rel="stylesheet" href="../css/auth.css" />
+    <title>🐕 Fluffy Friends | Inicio de sesión</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+      <a class="navbar-brand" href="../index.html">
+        🐕 Fluffy Friends
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="../about/index.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../integrantes/index.html">Integrantes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../contacto/index.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container bg-white mt-4 m0-auto p-3">
+      <form>
+        <h1 style="text-align: center;">Iniciar sesión</h1>
+        <div class="form-group">
+          <label for="uname"><b>Correo electrónico</b></label>
+          <input
+            class="form-control"
+            type="email"
+            placeholder="Correo electrónico"
+            name="uname"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="password"><b>Contraseña</b></label>
+          <input
+            class="form-control"
+            type="password"
+            placeholder="Ingresa contraseña"
+            name="password"
+            required
+          />
+        </div>
+        <button
+          class="btn btn-primary mb-2 w-100 m-0"
+          type="submit"
+          onclick="window.location.href='../app/index.html'"
+        >
+          Iniciar sesión
+        </button>
+        <button
+          class="btn btn-link mb-2 w-100 m-0"
+          type="submit"
+          onclick="window.location.href='../registro/index.html'"
+        >
+          Regístrate
+        </button>
+        <p>
+          <label class="m-0 w-100">
+            <input type="checkbox" checked="checked" name="remember" />
+            Recuérdame
+          </label>
+        </p>
+        <p>
+          <span class="psw">¿Olvidaste tu <a href="#">contraseña?</a></span>
+        </p>
+      </form>
+    </div>
+  </body>
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"
+  ></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</html>
